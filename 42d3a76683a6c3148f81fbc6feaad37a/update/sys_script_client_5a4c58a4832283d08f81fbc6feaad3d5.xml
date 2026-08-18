@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Jira create instructions</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+
+    // Don't show instructions if the Catalog Task is already Closed Complete
+    if (g_form.getValue('state') == '3') {
+        return;
+    }
+
+    var taskNum = g_form.getValue('number');
+
+    g_form.addErrorMessage(
+        '<b>⚠️ ACTION REQUIRED:</b><br><br>' +
+        '1. Manually create a <b>Jira Story</b> on the Jira board using the requirements and details provided in the <b>Description</b> field.<br><br>' +
+        '2. While creating the Jira Story, make sure the Jira <b>Description</b> includes:<br>' +
+        '<b>Ref: ' + taskNum + '</b><br><br>' +
+        '3. After the Jira Story is created, copy the generated <b>Jira Issue Key</b> (for example, SCRUM-123) and enter it in the <b>Jira Issue Key</b> field on this Catalog Task.<br><br>' +
+        '4. Once the Jira Issue Key has been entered, you can close this Catalog Task.'
+    );
+
+    g_form.setDisabled('short_description', true);
+    g_form.setDisabled('description', true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-03 11:10:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a4c58a4832283d08f81fbc6feaad3d5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Jira create instructions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Snow-jira integration">42d3a76683a6c3148f81fbc6feaad37a</sys_scope>
+        <sys_update_name>sys_script_client_5a4c58a4832283d08f81fbc6feaad3d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:59:09</sys_updated_on>
+        <table>sc_task</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Snow-jira integration">42d3a76683a6c3148f81fbc6feaad37a</claim_owner_scope>
+        <claim_timestamp>1a01373c5de0000001</claim_timestamp>
+        <metadata_update_name>sys_script_client_5a4c58a4832283d08f81fbc6feaad3d5</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Snow-jira integration</previous_claim_name>
+        <previous_claim_scope>42d3a76683a6c3148f81fbc6feaad37a</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 05:59:09</sys_created_on>
+        <sys_id>8605209583f603108f81fbc6feaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 05:59:09</sys_updated_on>
+    </sys_claim>
+</record_update>

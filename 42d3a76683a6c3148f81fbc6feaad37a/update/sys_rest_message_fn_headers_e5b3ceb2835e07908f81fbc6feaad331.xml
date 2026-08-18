@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
+        <name>Content-Type</name>
+        <rest_message_function display_value="GET Validate Issue">35638af2835e07908f81fbc6feaad3b4</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 08:13:07</sys_created_on>
+        <sys_id>e5b3ceb2835e07908f81fbc6feaad331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content-Type</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Snow-jira integration">42d3a76683a6c3148f81fbc6feaad37a</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_e5b3ceb2835e07908f81fbc6feaad331</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 06:51:13</sys_updated_on>
+        <value>application/json</value>
+    </sys_rest_message_fn_headers>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Snow-jira integration">42d3a76683a6c3148f81fbc6feaad37a</claim_owner_scope>
+        <claim_timestamp>19fea7091aa0000001</claim_timestamp>
+        <metadata_update_name>sys_rest_message_fn_headers_e5b3ceb2835e07908f81fbc6feaad331</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Snow-jira integration</previous_claim_name>
+        <previous_claim_scope>42d3a76683a6c3148f81fbc6feaad37a</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-10 06:51:13</sys_created_on>
+        <sys_id>3234e7a683a6c3148f81fbc6feaad315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-10 06:51:13</sys_updated_on>
+    </sys_claim>
+</record_update>
